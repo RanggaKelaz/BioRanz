@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ranz Bio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="wallpaper"></div>
+  <div class="container">
+    <header class="topbar">
+      <h1 class="logo">Ranz</h1>
+      <div class="menu-toggle" onclick="toggleMenu()">&#8942;</div>
+      <ul class="admin-menu" id="adminMenu">
+        <li><a href="#" onclick="openAdminLogin()">Admin Menu</a></li>
+      </ul>
+    </header>
+    
+    <main class="main-content">
+      <section class="buttons">
+        <button onclick="toggleSubMenu('wa')">WhatsApp</button>
+        <div class="submenu" id="wa">
+          <button>Chat</button>
+          <button>Call</button>
+        </div>
+
+        <button onclick="toggleSubMenu('tiktok')">TikTok</button>
+        <div class="submenu" id="tiktok">
+          <button>Profile</button>
+          <button>Videos</button>
+        </div>
+
+        <button onclick="toggleSubMenu('ig')">Instagram</button>
+        <div class="submenu" id="ig">
+          <button>Feed</button>
+          <button>Story</button>
+        </div>
+
+        <button onclick="toggleSubMenu('fb')">Facebook</button>
+        <div class="submenu" id="fb">
+          <button>Page</button>
+          <button>Message</button>
+        </div>
+
+        <button onclick="toggleSubMenu('yt')">YouTube</button>
+        <div class="submenu" id="yt">
+          <button>Channel</button>
+          <button>Live</button>
+        </div>
+
+        <button onclick="toggleSubMenu('shop')">Shop</button>
+        <div class="submenu" id="shop">
+          <button>Product 1</button>
+          <button>Product 2</button>
+        </div>
+
+        <button onclick="toggleSubMenu('group')">Group</button>
+        <div class="submenu" id="group">
+          <button>Telegram Group</button>
+          <button>WhatsApp Group</button>
+        </div>
+
+        <button onclick="toggleSubMenu('channel')">Channel</button>
+        <div class="submenu" id="channel">
+          <button>Telegram Channel</button>
+          <button>YouTube Channel</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="admin-login" id="adminLogin">
+      <h2>Admin Login</h2>
+      <input type="text" placeholder="Username" id="adminUser">
+      <input type="password" placeholder="Password" id="adminPass">
+      <button onclick="loginAdmin()">Login</button>
+    </div>
+
+    <div class="admin-panel" id="adminPanel">
+      <h2>Admin Panel</h2>
+      <button onclick="addProduct()">Tambah Produk</button>
+      <button onclick="addChannel()">Tambah Channel</button>
+      <textarea placeholder="Custom Code (HTML)"></textarea>
+      <button>Simpan</button>
+    </div>
+  </div>
+</body>
+</html>
